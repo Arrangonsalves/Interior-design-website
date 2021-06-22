@@ -1,0 +1,374 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background: white;
+}
+ 
+ 
+.footer .rights {
+text-align:center;
+font-family:arial;
+margin-right:950px;
+font-size:15px;
+}
+
+.wrapper{
+  position:absolute;
+  top: 30%;
+  right: 1%;
+  transform: translate(-50%,-10%);
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 35px;
+  border-radius: 5px;
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid grey;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper .input_field input[type="email"],
+.wrapper textarea{
+  border: 1px solid grey;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper .input_field input[type="phone"],
+.wrapper textarea{
+  border: 1px solid grey;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius:25px;
+  cursor: pointer;
+}
+
+
+/*.btn {
+    background:black;
+    text-align: center;
+    padding:10px;
+    /*border-radius: 100px;*/
+   /* color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+font-family:arial;
+/*width:90px;*/
+/*position: absolute;
+    right: 0px;
+    width: 100px;
+margin-right:20px;
+font-weight:bold;
+}*/
+
+/*.btn:hover {
+  color:white;
+  text-shadow: 10 0 0px blue;
+  transition: all 0.5s ease;
+  background-color:red;
+  border-radius:20px;
+  }*/
+
+
+
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+
+
+.wrap {
+  position:absolute;
+  top: 30%;
+  left:50%;
+  transform: translate(-50%, -70%);
+  width: 500px;
+  margin-left:500px;
+}
+
+
+.wrap ul {
+  list-style: none;
+}
+
+
+.wrap ul li {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid black;
+  float: left;
+  transition: all 0.5s ease;
+  margin-top:50px;
+}
+
+
+.wrap ul li .fa {
+  color: black;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+
+/*facebook*/
+.wrap ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrap ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrap ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrap ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrap ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrap ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+/* envelope*/
+.wrap ul li:hover.envelope {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrap ul li:hover .fa-envelope {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrap ul li:hover.whatsapp {
+  border: 5px solid #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+.wrap ul li:hover .fa-whatsapp {
+  color: #4dc247;
+  text-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 640px){
+  .wrap {
+      width: 350px;
+  }
+  .wrap ul li{
+      margin-top: 10px;
+  }
+  .wrap ul li.envelope{
+      margin-left: 60px;
+  }
+}
+
+
+@media screen and (max-width: 340px){
+  .wrap {
+      width: 150px;
+  }
+  .wrap ul li{
+      margin:15px;
+  }
+  .wrap ul li.envelope {
+      margin-left: 15px;
+  }
+}
+
+/*body{
+  background: white;/*no-repeat top center;*/
+ /* background-size: cover;
+  height: 100vh;
+}*/
+
+.boxes h2 {
+text-align:center;
+position:fixed;
+color:black;
+}
+
+/*#leftbox {
+                float:left;  
+                background:white;
+                width:50%;
+                height:40px;
+margin-left:-300px;
+margin-top:180px;
+text-align:center;
+margin-bottom:20px;
+               position:fixed;  
+   transform: translate(25%,-22%);
+            }
+
+#middlebox{
+                float:center;  
+                background:white;
+                width:50%;
+                height:50px;
+
+text-align:center;
+margin-top:170px;
+margin-right:-50px;
+
+position:fixed;
+transform: translate(80%,-22%);
+            }
+
+ #rightbox{
+                float:right;
+                background:white;
+                width:25%;
+                height:40px;
+margin-bottom:20px;
+transform: translate(270%,-40%);
+position:fixed;
+ }*/
+
+     
+             
+.slider {
+width:700px;
+height:400px;
+background:url("https://media.architecturaldigest.com/photos/55e76e86cd709ad62e8edb3a/master/w_700,h_600,c_limit/dam-images-decor-2014-11-ad100-reno-tips-architects-designers-renovation-tips-16-penny-drue-baird-living-room.jpg");
+/*margin:100px auto;*/
+animation:slide 8s infinite;
+/*top:500%;
+left:500%;*/
+margin-left:60px;
+margin-bottom:40px;
+background-repeat:no-repeat;
+}  
+
+
+@keyframes slide {
+25% {
+background:url("https://media.architecturaldigest.com/photos/55e78792302ba71f30179f02/master/w_700,h_600,c_limit/dam-images-daily-2014-08-ta-entrance-halls-best-entry-halls-10-paris.jpg");
+}
+50% {
+background:url("https://i.pinimg.com/originals/30/0a/49/300a49660b717dac0ef93622577038db.jpg");
+}
+/*25% {
+background:url("https://th.bing.com/th/id/OIP.Wu45VLcZhATcFY_9VjSY6QHaE8?pid=Api&rs=1.jpg");
+}
+100% {
+background:url("https://www.studioinndowney.com/site/assets/files/2244/downey-hotel-rooms-ca.700x600.jpg");
+}*/
+}
+
+/*@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+
+/* footer */
+.footer{
+position:fixed;
+    left: 0;
+    bottom:300px;
+width: 100%;
+height:70px;
+    text-align:none;
+background:#bfbfbf;
+padding: 20px 10px;
+bottom:0;
+}
+
+
+@media (min-width: 992px) {
+    /*body {
+        padding-bottom: 235px;*/
+    }
+    footer {
+        position:fixed;
+        bottom: 0;  
+        width: 100%;
+        height: 230px;  
+    }
+}
+
+

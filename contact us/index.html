@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Contact us</title>
+    <link rel="icon" href="/top logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="/contact us/script.js"></script>
+
+    <body>
+        <img src="logo.PNG" alt="logo">
+        <!--<img src="logo.PNG" alt="logo" width="300" height="200" style="vertical-align:middle;margin-bottom:-100px;">-->
+        <div class="wrapper">
+            <h2>Contact us</h2>
+            <div id="error_message">
+
+
+            </div>
+            <?php require '/insert.php';
+
+            ?>
+
+            <form action="insert.php" method="post" id="myform" onsubmit="return validate();" required>
+                <div class="input_field">
+                    <input type="text" class="input " placeholder="Name" id="name" name="name" required>
+                </div>
+                <div class="input_field">
+                    <input type="email" class="input" placeholder="Enter Email Address" id="email" name="email" required>
+                </div>
+                <div class="input_field">
+                    <input type="phone" class="input" placeholder="Enter Phone Number" id="phone" name="phone" required>
+                </div>
+                <div class="input_field">
+                    <input type="text" class="input" placeholder="Enter Subject" id="subject" name="subject" required>
+                </div>
+                <div class="input_field">
+                    <textarea placeholder="Type Message" id="message" name="message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="slider"></div>
+        <br>
+        <br>
+        <br>
+        <div class="footer">
+            <div class="rights">© Copyright 2020 Dream Decor</div>
+            <div class="wrap">
+                <ul>
+                    <li class="facebook"><a href="https://en-gb.facebook.com/login/"><i class="fa fa-facebook fa-1.9x" aria-hidden="true"></i></a></li>
+                    <li class="twitter"><a href="https://twitter.com/login"><i class="fa fa-twitter fa-1.9x" aria-hidden="true"></i></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-1.9x" aria-hidden="true"></i></a></li>
+                    <li class="envelope"><a href="https://mail.google.com/mail/"><i class="fa fa-envelope fa-1.9x" aria-hidden="true"></i></a></li>
+                    <li class="whatsapp"><a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp fa-1.9x" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="boxes">
+
+
+            <div id="leftbox">
+                <h2> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Address &nbsp <i class="fa fa-map-marker fa-1.9x"></i><br></h2>
+                <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Visit us at:<br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Fifth Avenue,Malabar Hill, Mumbai
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div id="middlebox">
+                <h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Phone &nbsp <i class="fa fa-phone"></i><br></h2>
+                <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Call us at 503.432.8617 <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp for questions or general information.<br>
+                <br>
+                <br>
+            </div>
+
+            <div id="rightbox">
+                <h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Careers&nbsp <i class="fa fa-envelope-o"></i><br> </h2>
+
+                <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Please send resume, cover letter, and examples of work to:<br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp careers@dreamdecor.com
+            </div>
+        </div>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15094.14799899811!2d72.7925640282461!3d18.951877244546452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cde347fe682d%3A0x480b7a8c41fda28a!2sMalabar%20Hill%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1600064487492!5m2!1sen!2sin"
+                width="550" height="450" frameborder="0" style="border:0;margin-left:750px;margin-top:-350px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </body>
+
+</html>
