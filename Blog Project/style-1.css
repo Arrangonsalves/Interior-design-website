@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", "Playfair Display";
+    font-size: 20px;
+    line-height: 1.5;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  li {
+    font-size: 20px;
+  }
+
+  /* navbar */
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background:white;
+  color: black;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2.5px solid #f03d3d;
+  text-transform: uppercase;
+}
+
+#nav-bar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#nav-bar h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav-bar li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#nav-bar li a:hover {
+  background-color: #f03d3d;
+}
+
+  
+/* Header Title */
+  .header img {
+    float: left;
+    margin-top: -19px;
+  }
+  
+  .header {
+    font-family: "Playfair Display";
+    padding: 40px;
+    font-size: 24px;
+    text-align: center;
+    background: white;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    /* float: left;
+    width: 75%; */
+    text-align: justify;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: right;
+    width: 25%;
+    /* padding-left: 20px; */
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 10px 25px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px;
+    font-family: "Helvetica Neue", "Playfair Display";
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .card p, ol {
+    padding: 10px 50px;
+    line-height: 1.5;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+  
+.social-icons a{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6e3e3;
+    margin:20px 10px;
+    border-radius:50%;
+}
+  
+.social-icons{
+    display: flex;
+  
+}
+  
+.social-icons i,.social i{
+    color:#000000;
+}
+  
+.social-icons a:hover{
+    background-color:#000000;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    transition:all ease 0.5s;
+}
+
+.social-icons a:hover i,
+.social a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media all and (max-width: 320px) {
+  #nav-bar {
+      display: none;
+    }
+  }
