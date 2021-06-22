@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+  }
+  
+  body {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  li {
+    font-size: 20px;
+  }
+  
+  /* Header Title */
+  .header img {
+    float: left;
+    margin-top: -19px;
+  }
+  
+  .header {
+    font-family: "Playfair Display";
+    padding: 40px;
+    font-size: 24px;
+    text-align: center;
+    background: white;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    /* float: left;
+    width: 75%; */
+    text-align: justify;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: right;
+    width: 25%;
+    /* padding-left: 20px; */
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+  }
+  
+  .card p {
+    padding: 10px 90px;
+    line-height: 1.5;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
